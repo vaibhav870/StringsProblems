@@ -15,6 +15,8 @@ public class ReverseString {
 		}
 		System.out.println(rev);
 
+
+		//using StringBuffer which has reverse function as stringbuffer is mutable
 		StringBuffer strb= new StringBuffer(str);
 		strb.reverse();
 		System.out.println(strb);

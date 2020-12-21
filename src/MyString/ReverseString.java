@@ -9,10 +9,15 @@ public class ReverseString {
 		int len=str.length();
 		System.out.println(len);
 		
-		String rev;
+		String rev="";
 		for (int i=len-1; i>=0;i--) {
-			System.out.println(str.charAt(i));
+			rev = rev + str.charAt(i);
 		}
+		System.out.println(rev);
+
+		StringBuffer strb= new StringBuffer(str);
+		strb.reverse();
+		System.out.println(strb);
 	}
 
 }

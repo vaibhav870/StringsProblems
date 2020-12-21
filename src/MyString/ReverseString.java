@@ -1,16 +1,18 @@
 package MyString;
 
 public class ReverseString {
-    public static void main(String[] args) {
-        String s="vaibhav";
-        int len=s.length();
-        String rev="";
 
-        for (int i=len-1;i>=len;i--){
-            rev=rev+s.charAt(i);
+	public static void main(String[] args) {
+			
+		String str="Vaibhav";
+		
+		int len=str.length();
+		System.out.println(len);
+		
+		String rev;
+		for (int i=len-1; i>=0;i--) {
+			System.out.println(str.charAt(i));
+		}
+	}
 
-        }
-
-        System.out.println(rev);
-    }
 }

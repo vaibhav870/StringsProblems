@@ -22,12 +22,13 @@ public class DuplicateWord {
                     wordcount.put(word.toLowerCase(),wordcount.get(word)+1);  // if yes the retrive word and its value 1 and add 1
                 }
                 else {
+                                // word , value:-1
                     wordcount.put(word,1); // if word is not available then add word with 1 value
                 }
         }
-        System.out.println(wordcount);
+        //System.out.println(wordcount);
 
-        Set<String> wordsinString= wordcount.keySet();
+        Set<String> wordsinString= wordcount.keySet(); // store only keys in Set
 
         for (String item:wordsinString){
             if(wordcount.get(item)>1){

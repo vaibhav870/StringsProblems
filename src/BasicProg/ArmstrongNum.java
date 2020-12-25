@@ -29,7 +29,7 @@ public class ArmstrongNum {
                 System.out.println("Number is not a armstorng");
             }
     }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
        int a[]={0, 1, 153, 370, 371, 407,10};
         for(int item:a){
             isArmstrong(item);
